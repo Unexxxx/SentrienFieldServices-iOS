@@ -15,6 +15,24 @@ class HomeScreen: UIViewController {
     @IBOutlet weak var navMenuButton: UIBarButtonItem!
     @IBOutlet weak var navLogo: UIBarButtonItem!
     
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var arriveButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var resumeButton: UIButton!
+    @IBOutlet weak var completeButton: UIButton!
+    
+    @IBOutlet weak var partsButton: UIButton!
+    @IBOutlet weak var equipmentButton: UIButton!
+    @IBOutlet weak var expensesButton: UIButton!
+    @IBOutlet weak var laborButton: UIButton!
+    @IBOutlet weak var signatureButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var attachedButton: UIButton!
+    @IBOutlet weak var cachedButton: UIButton!
+    @IBOutlet weak var refreshButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
