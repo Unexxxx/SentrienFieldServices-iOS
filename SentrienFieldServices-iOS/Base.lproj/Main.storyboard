@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="7mR-LP-fDS">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="7mR-LP-fDS" userLabel="Nav Bar">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -36,7 +36,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-Se-gwz">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-Se-gwz">
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3S-3B-5hJ">
@@ -85,15 +85,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QAx-Se-gwz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EQB-r1-svd"/>
-                            <constraint firstItem="QAx-Se-gwz" firstAttribute="top" secondItem="7mR-LP-fDS" secondAttribute="bottom" id="OeT-Hp-U3F"/>
-                            <constraint firstItem="QAx-Se-gwz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bQa-dP-dVR"/>
-                            <constraint firstAttribute="bottom" secondItem="QAx-Se-gwz" secondAttribute="bottom" id="eY4-zL-iqi"/>
+                            <constraint firstItem="7mR-LP-fDS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4NE-SU-Hxb"/>
+                            <constraint firstItem="7mR-LP-fDS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NJG-EP-lIc"/>
+                            <constraint firstItem="7mR-LP-fDS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tn1-cC-xID"/>
+                            <constraint firstItem="QAx-Se-gwz" firstAttribute="top" secondItem="7mR-LP-fDS" secondAttribute="bottom" id="jlg-eA-KQh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="homeScreenNavBar" destination="7mR-LP-fDS" id="O7n-sx-OaZ"/>
                         <outlet property="navAddButton" destination="oWV-sB-HTM" id="0VK-Fb-yCd"/>
-                        <outlet property="navClockButton" destination="CSV-Os-uxf" id="1b0-rz-4Yo"/>
+                        <outlet property="navClockButton" destination="CSV-Os-uxf" id="Mo8-Mn-guG"/>
+                        <outlet property="navLogo" destination="D07-gc-xLV" id="NGJ-Ez-Rsl"/>
                         <outlet property="navMenuButton" destination="Rny-Ft-gYn" id="65L-Ej-SDM"/>
                     </connections>
                 </viewController>
