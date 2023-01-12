@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class HomeScreen: UIViewController {
 
     @IBOutlet weak var homeScreenNavBar: UINavigationBar!
@@ -32,7 +33,6 @@ class HomeScreen: UIViewController {
     @IBOutlet weak var refreshButton: UIButton!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,8 +40,18 @@ class HomeScreen: UIViewController {
         navAddButton.tintColor = UIColor(named: "navButtonsColor")
         navMenuButton.tintColor = UIColor(named: "navButtonsColor")
         
+        
+        
     }
 
-
+    @IBAction func btnSettings(_ sender: Any) {
+        
+        let _ : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "settingsScreen") as! SettingsScreen
+        nextViewController.modalPresentationStyle = .fullScreen
+        present(nextViewController, animated: true, completion: nil)
+        
+        
+    }
 }
 
